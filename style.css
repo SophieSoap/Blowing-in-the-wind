@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #17184b;
+    --secondary-color: #F1F1F1;
+    --tertiary-color: #1E1E1E;
+    --background-color: #99abee;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: var(--primary-color);
+    padding: 100px;
+}
+
+h1 {
+    font-size: 8em;
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: transparent;
+    display: block;
+    position: relative;
+    padding-right: 25px; /* Platz für den Punkt */
+    
+}
+
+.navigation li a::after {
+    content: '•';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Breite des Punktes */
+    height: 20px; /* Höhe des Punktes */
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.navigation li a:hover::after {
+    opacity: 0; /* Punkt ausblenden*/
+}
+
+.navigation li a:hover {
+    color: var(--primary-color);
+    padding-left: 25px; /* Platz für den Text beim Hover */
+}
+
+section {
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.text {
+    flex: 2;
+}
+
+  
+
+
+#sources {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.source-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.source-column {
+    flex: 1;
+    padding: 0;
+}
+
+.source-column p {
+    margin-bottom: 10px;
+}
