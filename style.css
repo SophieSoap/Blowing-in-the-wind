@@ -9,17 +9,73 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    color: #000;
+font-family: "Open Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 header {
     color: var(--primary-color);
     padding: 100px;
 }
-
+/* headline 1 (title)*/
 h1 {
-    font-size: 8em;
+color: #201658;
+font-family: "IBM Plex Mono";
+font-size: 128px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
-
+/*headline 2(subtitle)*/
+h2 {
+color: #201658;
+font-family: "PP Supply Mono";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 96px */
+letter-spacing: -1.408px;
+}
+/* headline 3 (Argument)*/
+h3 {
+color: #F16101;
+font-family: "IBM Plex Serif";
+font-size: 60px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}
+/*headline 4 (quote)*/
+h4 {
+color: #F16101;
+font-family: "IBM Plex Serif";
+font-size: 60px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}
+/*quote source*/
+.qsource {
+    color: #F16101;
+font-family: "IBM Plex Serif";
+font-size: 50px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+/*footer (citation and project info)*/
+.footer {color: #000;
+font-family: "IBM Plex Serif";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 121%; /* 29.04px */
+letter-spacing: -0.24px;
+        }
 .navigation {
     position: fixed;
     top: 20px;
