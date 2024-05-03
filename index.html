@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is the answer blowing in the wind?</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PP+Supply+Mono&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script src="leader-line.min.js"></script>
+
 </head>
 
 <body>
     <header>
-        <h1>Is the answer blowing in the wind?</h1>
-        <h2>Understanding pushback against climate change</h2>
+        <div class="headline">
+            <h1>Is the answer blowing in the wind?</h1>
+            <h2>Understanding pushback against climate change</h2>
+        </div>
         <div class="navigation">
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
@@ -24,27 +31,45 @@
     </header>
 
     <main>
-        <section id="introduction">
-            <div class="content">
-                <div class="image">
-                    <img src="images/Wind-Turbine-PNG-Image.png" alt="">
-                </div>
-                <div class="text">
-                    <h2>Introduction</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed turpis vel est dapibus luctus. Nulla facilisi. Ut dapibus dolor vitae libero auctor, vel convallis velit euismod.</p>
-                </div>
+        <section id="introduction" class="introduction">
+            <div class="background-image">
+            <img src="images/Wind_Background.png" alt="">
+            </div>
+            <div class="introduction-content">
+                <p>Wind energy stands tall as Germany's primary renewable power source, essential for the nation's shift away from fossil fuels. With one of the world's largest onshore wind capacities, Germany has made significant strides in efficiency and cost reduction. Since 2019, onshore wind has become Germany’s single most important electricity source, with an annual output growth of 25 percent over four years until 2023. Despite its pivotal role, the industry faces challenges like declining expansion rates and bureaucratic hurdles. However, despite these challenges, onshore wind remains a crucial component of Germany's energy transition.</p>
+            </div>
+            <div class="introduction-text">
+                <p>As Germany grapples with these challenges, the question arises:</p>
+                <h3>What are the key arguments hindering wind energy progress?</h3>
             </div>
         </section>
 
+        <section id="argument1">
+            <p>Argument 1</p>
+            <h4>Wildlife and environmental conservation</h4>
+            <div class="argument1-text">
+            <p>Despite widespread public support for further onshore wind expansion in Germany, the sector faces significant pushback, primarily due to environmental concerns. The German economy ministry (BMWi) has pointed to the federal ministry for the environment (BMU) as being responsible for blocking the expansion of wind energy. While surveys indicate strong support for renewable energy, the rapid proliferation of wind turbines has fueled opposition. <b>Legal challenges and regulatory changes have further complicated the landscape, posing a formidable challenge to meeting emissions reduction goals.</b></p>
+            </div>
+            <div class="image-container">
+                <img src="images/bats.png" alt="" id="argument-image">
+            </div>
+            
+        </section>
+
         <section id="sources">
+            <P>Climate Friction Map</P>
+            <p>Project Information</p>
+                        <p>Text</p>
+                        <p>FH Potsdam 2024</p>
             <div class="container">
+                <p>Sources</p>
                 <div class="source-row">
                     <div class="source-column">
-                        <h2>Project Information</h2>
-                        <p>Text</p>
+                    <p>Source 1</p>
+                    <p>Source 2</p>
+                    <p>Source 3</p> 
                     </div>
                     <div class="source-column">
-                        <h2>Sources</h2>
                         <p>Source 1</p>
                         <p>Source 2</p>
                         <p>Source 3</p>
@@ -55,5 +80,7 @@
         
     </main>
     <footer></footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,81 +1,58 @@
 :root {
     --primary-color: #17184b;
-    --secondary-color: #F1F1F1;
+    --secondary-color: #F16101;
     --tertiary-color: #1E1E1E;
-    --background-color: #99abee;
+    --background-color: #EFEEE9;
+    --font-family-heading: "IBM Plex Mono", monospace;
+    --font-family-body: "Open Sans", sans-serif;
+    --font-family-third: "PP Supply Mono", monospace;
 }
+
+/* @ media queries*/
+/* max width*/
 
 body {
     background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    color: #000;
-font-family: "Open Sans";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: var(--font-family-body);
+    font-size: 16px;
+}
+
+h1 {
+    font-family: var(--font-family-heading);
+    font-size: 128px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-family: var(--font-family-third);
+    color: var(--secondary-color);
+    font-size: 48px;
+    font-weight: 400;
+    }
+
+h3 {
+    font-family: var(--font-family-third);
+    color: var(--primary-color);
+    font-size: 64px;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: var(--font-family-heading);
+    color: var(--secondary-color);
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
 }
 
 header {
     color: var(--primary-color);
-    padding: 100px;
+    padding-left: 100px;
+    margin: 0;
 }
-/* headline 1 (title)*/
-h1 {
-color: #201658;
-font-family: "IBM Plex Mono";
-font-size: 128px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-/*headline 2(subtitle)*/
-h2 {
-color: #201658;
-font-family: "PP Supply Mono";
-font-size: 64px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 96px */
-letter-spacing: -1.408px;
-}
-/* headline 3 (Argument)*/
-h3 {
-color: #F16101;
-font-family: "IBM Plex Serif";
-font-size: 60px;
-font-style: italic;
-font-weight: 400;
-line-height: normal;
-}
-/*headline 4 (quote)*/
-h4 {
-color: #F16101;
-font-family: "IBM Plex Serif";
-font-size: 60px;
-font-style: italic;
-font-weight: 400;
-line-height: normal;
-}
-/*quote source*/
-.qsource {
-    color: #F16101;
-font-family: "IBM Plex Serif";
-font-size: 50px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-}
-/*footer (citation and project info)*/
-.footer {color: #000;
-font-family: "IBM Plex Serif";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 121%; /* 29.04px */
-letter-spacing: -0.24px;
-        }
+
 .navigation {
     position: fixed;
     top: 20px;
@@ -98,7 +75,7 @@ letter-spacing: -0.24px;
     color: transparent;
     display: block;
     position: relative;
-    padding-right: 25px; /* Platz für den Punkt */
+    padding-right: 25px;
     
 }
 
@@ -124,32 +101,49 @@ letter-spacing: -0.24px;
     padding-left: 25px; /* Platz für den Text beim Hover */
 }
 
-section {
-    padding: 50px;
-    margin-top: 100px;
+/*introduction*/
+#introduction {
+    position: relative; /* Relative Positionierung für genaue Platzierung */
 }
 
-.content {
-    display: flex;
-    align-items: center;
+.background-image {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
 }
 
-.image {
-    flex: 1;
-    margin-right: 20px;
+.introduction-content {
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    position: absolute;
+    top: 70px; /* Abstand vom oberen Rand */
+    right: 100px;
+    max-width: 800px; /* Maximale Breite der Box */
+    z-index: 1; /* Einleitung über Hintergrundbild liegt */
 }
 
-.image img {
-    max-width: 100%;
+.introduction-text {
+    position: relative;
+    top: 100px;
+    font-family: var(--font-family-body);
+    font-size: 18px;
+    margin: 100px;
 }
 
-.text {
-    flex: 2;
+/*argument1*/
+#argument1 {
+    margin: 100px;
+    padding-top: 10px;
 }
 
-  
+.argument1-text {
+    padding-left: 150px;
+    padding-right: 5px;
+}
 
-
+/*sources*/
 #sources {
     background-color: var(--primary-color);
     color: var(--background-color);
