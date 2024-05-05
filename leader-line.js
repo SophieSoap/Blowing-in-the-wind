@@ -1,6 +1,12 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  const elements1 = document.getElementsByClassName('container-argument1-content1');
-  const elements2 = document.getElementsByClassName('argument1-content2');
+  connectElements('container-argument1-content1', 'argument1-content2');
+  connectElements('argument1-content3', 'argument1-content4');
+  connectElements('argument1-content4', 'argument1-content5');
+});
+
+function connectElements(className1, className2) {
+  const elements1 = document.getElementsByClassName(className1);
+  const elements2 = document.getElementsByClassName(className2);
 
   // Da getElementsByClassName eine NodeList zurückgibt, iterieren wir durch die Elemente und verbinden sie paarweise
   for (let i = 0; i < elements1.length; i++) {
@@ -18,4 +24,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
           endPlug: 'arrow1', // Design des Endplugs als Pfeil
       });
   }
-});
+}

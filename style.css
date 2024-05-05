@@ -147,8 +147,6 @@ header {
 
 .image-argument1-content1 img {
     will-change: transform; /* Legt fest, dass das Element eine Transformation erfahren wird */
-    transform: translate3d(0px, 0px, 0px); /* Standard-Transformation */
-    transform-style: preserve-3d; /* Behält die 3D-Transformation bei */
     transition: transform 3s ease; /* Animationsübergang */
 }
 
