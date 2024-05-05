@@ -14,7 +14,10 @@
 body {
     background-color: var(--background-color);
     font-family: var(--font-family-body);
-    font-size: 16px;
+    font-size: 18px;
+    max-width: 1500px;
+    margin-left: 100xp;
+    margin-right: 100px;
 }
 
 h1 {
@@ -37,6 +40,7 @@ h3 {
     color: var(--primary-color);
     font-size: 64px;
     font-weight: 400;
+    margin: 0%;
 }
 
 h4 {
@@ -45,12 +49,12 @@ h4 {
     font-size: 48px;
     font-style: italic;
     font-weight: 400;
+    margin: 0%;
 }
 
 header {
     color: var(--primary-color);
-    padding-left: 100px;
-    margin: 0;
+    margin-left: 100px;
 }
 
 .navigation {
@@ -104,6 +108,7 @@ header {
 /*introduction*/
 #introduction {
     position: relative; /* Relative Positionierung für genaue Platzierung */
+    margin-left: 100px;
 }
 
 .background-image {
@@ -111,6 +116,7 @@ header {
     background-position: center;
     height: 100vh;
     width: 100%;
+    margin-left: -100px;
 }
 
 .introduction-content {
@@ -119,40 +125,86 @@ header {
     border-radius: 25px;
     position: absolute;
     top: 70px; /* Abstand vom oberen Rand */
-    right: 100px;
+    right: 0px;
     max-width: 800px; /* Maximale Breite der Box */
     z-index: 1; /* Einleitung über Hintergrundbild liegt */
 }
 
 .introduction-text {
-    position: relative;
-    top: 100px;
-    font-family: var(--font-family-body);
-    font-size: 18px;
-    margin: 100px;
+    
 }
 
 /*argument1*/
 #argument1 {
-    margin: 100px;
     padding-top: 10px;
+    margin-left: 100px;
 }
 
-.argument1-text {
-    padding-left: 150px;
-    padding-right: 5px;
+.container-argument1-content1 {
+    display: flex;
+    align-items: center;
+}
+
+.image-argument1-content1 img {
+    will-change: transform; /* Legt fest, dass das Element eine Transformation erfahren wird */
+    transform: translate3d(0px, 0px, 0px); /* Standard-Transformation */
+    transform-style: preserve-3d; /* Behält die 3D-Transformation bei */
+    transition: transform 3s ease; /* Animationsübergang */
+}
+
+.argument1-content1 {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.argument1-content2 {
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 600px; /* Maximale Breite der Box */
+    margin-top: 50px;
+}
+
+.argument1-content3 {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.argument1-content4 {
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 600px; /* Maximale Breite der Box */
+    margin-top: 50px;
+}
+
+.argument1-content5 {
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 600px; /* Maximale Breite der Box */
+    margin-top: 50px;
 }
 
 /*sources*/
 #sources {
     background-color: var(--primary-color);
     color: var(--background-color);
-    padding: 50px;
+    padding: 100px;
+    
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    
 }
 
 .source-row {
