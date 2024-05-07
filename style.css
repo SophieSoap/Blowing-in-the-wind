@@ -2,21 +2,49 @@
     --primary-color: #17184b;
     --secondary-color: #F16101;
     --tertiary-color: #1E1E1E;
+    --quaternary-color: #795AED;
+    --textbox-color: #DEDCE9;
     --background-color: #EFEEE9;
     --font-family-heading: "IBM Plex Mono", monospace;
+    --font-family-heading2: "IBM Plex Serif", serif;
     --font-family-body: "Open Sans", sans-serif;
     --font-family-third: "PP Supply Mono", monospace;
 }
 
-/* @ media queries*/
-/* max width*/
+.ibm-plex-mono-regular {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.ibm-plex-mono-semibold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+.ibm-plex-mono-bold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.ibm-plex-serif-bold-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/* @ media queries */
+/* parallax scrolling effect */
+/* max width */
 
 body {
     background-color: var(--background-color);
     font-family: var(--font-family-body);
     font-size: 18px;
     max-width: 1500px;
-    margin-left: 100xp;
+    /* margin-left: 100px; */
     margin-right: 100px;
 }
 
@@ -44,10 +72,10 @@ h3 {
 }
 
 h4 {
-    font-family: var(--font-family-heading);
+    font-family: var(--font-family-heading2);
     color: var(--secondary-color);
     font-size: 48px;
-    font-style: italic;
+    font-style: bold;
     font-weight: 400;
     margin: 0%;
 }
@@ -124,9 +152,9 @@ header {
     border: 2px solid var(--primary-color);
     border-radius: 25px;
     position: absolute;
-    top: 70px; /* Abstand vom oberen Rand */
+    top: 70px;
     right: 0px;
-    max-width: 800px; /* Maximale Breite der Box */
+    max-width: 800px;
     z-index: 1; /* Einleitung über Hintergrundbild liegt */
 }
 
@@ -138,6 +166,7 @@ header {
 #argument1 {
     padding-top: 10px;
     margin-left: 100px;
+    position: relative;
 }
 
 .container-argument1-content1 {
@@ -150,6 +179,32 @@ header {
     transition: transform 3s ease; /* Animationsübergang */
 }
 
+.container-argument1-content3 {
+    display: flex;
+    align-items: center;
+}
+
+.image-argument1-content1 img {
+    bottom: -50px;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 1000px;
+    right: 200px;
+    z-index: 1; /* Damit das Bild über dem Hintergrundbild liegt */
+    /* Weitere Anpassungen nach Bedarf */
+}
+
+.image-argument1-content3 {
+    position: relative;
+    left: 100px;
+}
+
+
+
+
+
 .argument1-content1 {
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -160,11 +215,12 @@ header {
 }
 
 .argument1-content2 {
-    border: 2px solid var(--primary-color);
+    background-color: var(--textbox-color);
     padding: 20px;
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
     margin-top: 50px;
+    align-items: center;
 }
 
 .argument1-content3 {
@@ -177,7 +233,7 @@ header {
 }
 
 .argument1-content4 {
-    border: 2px solid var(--primary-color);
+    background-color: var(--textbox-color);
     padding: 20px;
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
@@ -185,11 +241,99 @@ header {
 }
 
 .argument1-content5 {
-    border: 2px solid var(--primary-color);
+    background-color: var(--textbox-color);
     padding: 20px;
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
     margin-top: 50px;
+}
+
+.container-argument1-content5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.argument1-content6 {
+    background-color: var(--textbox-color);
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 600px; /* Maximale Breite der Box */
+    margin-top: 50px;
+    align-items: center;
+}
+
+.argument1-content7 {
+    background-color: var(--textbox-color);
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 600px; /* Maximale Breite der Box */
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+.argument1-bigpicture {
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    max-width: 600px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.argument1-quote {
+    display: flex;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.quote-mark {
+    flex: 1;
+    text-align: center;
+    font-family: var(--font-family-heading2);
+    font-size: 96px;
+    color: var(--primary-color);
+}
+
+.quote-text {
+    flex: 3; /* mehr Platz für mittlere Spalte */
+}
+
+
+.banner {
+    background-color: var(--quaternary-color);
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Position für das überlagernde Bild */
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.banner h1 {
+    margin-left: 100px;
+    display: inline;
+}
+
+.banner-image {
+    width: 200px;
+    position: absolute; /* Positioniert das Bild absolut innerhalb des Headers */
+    top: 50%;
+    right: 300px;
+    transform: translateY(-50%); /* Zentriert das Bild vertikal */
+    z-index: 1;
+}
+
+.food-for-thought p {
+    font-family: var(--font-family-heading2);
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
 }
 
 /*sources*/
@@ -197,7 +341,7 @@ header {
     background-color: var(--primary-color);
     color: var(--background-color);
     padding: 100px;
-    
+    margin-right: -100px;
 }
 
 .container {

@@ -1,7 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   connectElements('container-argument1-content1', 'argument1-content2');
-  connectElements('argument1-content3', 'argument1-content4');
+  connectElements('container-argument1-content3', 'argument1-content4');
   connectElements('argument1-content4', 'argument1-content5');
+  connectElements('argument1-content5', 'argument1-content6');
+  connectElements('argument1-content6', 'argument1-content7');
 });
 
 function connectElements(className1, className2) {
