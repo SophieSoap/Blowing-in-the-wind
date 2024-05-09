@@ -172,14 +172,15 @@ header {
     position: relative;
 }
 
+/*
 .container-argument1-content1 {
     display: flex;
     align-items: center;
 }
 
 .image-argument1-content1 img {
-    will-change: transform; /* Legt fest, dass das Element eine Transformation erfahren wird */
-    transition: transform 3s ease; /* Animationsübergang */
+    will-change: transform; /* Legt fest, dass das Element eine Transformation erfahren wird *
+    transition: transform 3s ease; /* Animationsübergang *
 }
 
 .container-argument1-content3 {
@@ -196,17 +197,19 @@ header {
     top: 1000px;
     right: 200px;
     z-index: 1; /* Damit das Bild über dem Hintergrundbild liegt */
-    /* Weitere Anpassungen nach Bedarf */
+    /* Weitere Anpassungen nach Bedarf *
 }
 
 .image-argument1-content3 {
     position: relative;
     left: 100px;
+}*/
+
+.container-argument1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-
-
-
-
 
 .argument1-content1 {
     background-color: var(--primary-color);
@@ -215,6 +218,7 @@ header {
     border-radius: 25px;
     max-width: 800px;
     margin-top: 50px;
+    margin: auto;
 }
 
 .argument1-content2 {
@@ -223,58 +227,25 @@ header {
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
     margin-top: 50px;
-    align-items: center;
-}
-
-.argument1-content3 {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    padding: 20px;
-    border-radius: 25px;
-    max-width: 800px;
-}
-
-.argument1-content4 {
-    background-color: var(--textbox-color);
-    padding: 20px;
-    border-radius: 25px;
-    max-width: 600px; /* Maximale Breite der Box */
-    margin: auto; /* Zentrieren der Box mit automatischen Seitenrändern */
-}
-
-.argument1-content5 {
-    background-color: var(--textbox-color);
-    padding: 20px;
-    border-radius: 25px;
-    max-width: 600px; /* Maximale Breite der Box */
     margin: auto;
 }
 
-.container-argument1-content5 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.overlay-image {
+    position: absolute;
+    top: 1700px;
+    left: -50px;
+    z-index: 1; /* Bild über Hintergrundbild */
+}
+
+.windmill-image {
+    position: relative;
+    left: 50px;
 }
 
 
 
-.argument1-content6 {
-    background-color: var(--textbox-color);
-    padding: 20px;
-    border-radius: 25px;
-    max-width: 600px; /* Maximale Breite der Box */
 
-    margin: auto;
-}
 
-.argument1-content7 {
-    background-color: var(--textbox-color);
-    padding: 20px;
-    border-radius: 25px;
-    max-width: 600px; /* Maximale Breite der Box */
-    align-items: center;
-    margin-right: 70px;
-}
 
 
 .argument1-bigpicture {

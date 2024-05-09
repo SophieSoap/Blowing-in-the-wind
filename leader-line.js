@@ -1,15 +1,19 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  connectElements('container-argument1-content1', 'argument1-content2');
+  connectElements('argument1-content1', 'argument1-content2');
+  connectElements('argument1-content2', 'argument1-content3');
   connectElements('argument1-content3', 'argument1-content4');
   connectElements('argument1-content4', 'argument1-content5');
-  connectElements('argument1-content5', 'argument1-content6');
   connectElements('argument1-content6', 'argument1-content7');
-  //connectElements('argument1-bigpicture', 'argument1-quote');
+  connectElements('argument1-content7', 'argument1-content8');
 });
 
-function connectElements(className1, className2) {
-  const elements1 = document.getElementsByClassName(className1);
-  const elements2 = document.getElementsByClassName(className2);
+//function connectElements(className1, className2) {
+  //const elements1 = document.getElementsByClassName(className1);
+  //const elements2 = document.getElementsByClassName(className2);
+
+  function connectElements(id1, id2) {
+    const elements1 = document.getElementById(id1);
+    const elements2 = document.getElementById(id2);
 
   // Da getElementsByClassName eine NodeList zurückgibt, iterieren wir durch die Elemente und verbinden sie paarweise
   for (let i = 0; i < elements1.length; i++) {
