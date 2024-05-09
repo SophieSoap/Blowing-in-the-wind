@@ -67,9 +67,10 @@ h2 {
 h3 {
     font-family: var(--font-family-third);
     color: var(--primary-color);
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 400;
-    margin: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -259,9 +260,7 @@ header {
 }
 
 .argument1-quote2 {
-    
     max-width: 800px;
-   
     margin: auto;
     background-color: var(--textbox-color2);
     border-radius: 25px;
@@ -299,9 +298,10 @@ header {
 }
 
 .food-for-thought p {
-    font-family: var(--font-family-heading2);
+    font-family: var(--font-family-heading);
+    color: var(--primary-color);
     font-size: 36px;
-    font-style: italic;
+    font-style: monospace;
     text-align: center;
 }
 
