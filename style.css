@@ -107,7 +107,7 @@ header {
     color: var(--primary-color);
     margin-left: 100px;
 
-    background-color: rgba(250,0,0,.3);
+    background-color: rgba(250,0,0,.1);
 }
 .headline {
     width: 100%;
@@ -370,8 +370,8 @@ header {
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 .exclamation-marks {
-    margin-right: -100px;
-    margin-top: -250px;
+    margin-right: -70px;
+    margin-top: -200px;
 }
 
 
@@ -460,21 +460,35 @@ header {
 
 .content-item {
     border: green solid 5px;
-    
+    display: flex;
+    gap: 48px;
+    align-items: center;
 }
 
 .align-left {
-    display: flex;
-    gap: 48px;
     justify-content: flex-start;
 }    
 
 .align-right {
-    display: flex;
-    gap: 48px;
     justify-content: flex-end;
 }    
+.align-center { 
+    justify-content: center;
+}
 
+/* .mirror-horizontal {
+    transform: scaleX(-1);
+}
+.mirror-vertical {
+    transform: scaleY(-1);
+} */
+.rotate90 {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(190eg);
+    transform: rotate(90deg);
+}
 
 /* textboxes */
 
@@ -492,8 +506,13 @@ header {
     max-width: none;
 } */
 
+.golden-ratio-rev {
+    width: 38.2%;
+    min-width: 300px
+}
 .golden-ratio {
     width: 61.8%;
+    min-width: 600px
 }
 
 .picture-box {
