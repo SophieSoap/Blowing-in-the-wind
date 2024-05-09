@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   connectElements('argument1-content4', 'argument1-content5');
   connectElements('argument1-content5', 'argument1-content6');
   connectElements('argument1-content6', 'argument1-content7');
+  //connectElements('argument1-bigpicture', 'argument1-quote');
 });
 
 function connectElements(className1, className2) {

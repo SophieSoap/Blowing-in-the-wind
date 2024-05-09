@@ -140,8 +140,10 @@ header {
 }
 
 .background-image {
-    background-size: cover;
-    background-position: center;
+    /*background-size: cover;
+    background-position: center;*/
+    size: cover;
+    position: center;
     height: 100vh;
     width: 100%;
     margin-left: -100px;
@@ -155,27 +157,13 @@ header {
     top: 70px;
     right: 0px;
     max-width: 800px;
-    z-index: 1; /* Einleitung über Hintergrundbild liegt */
+    z-index: 1;  /*Einleitung über Hintergrundbild liegt */
 }
 
 .introduction-text {
     
 }
-/*Container Argument Begriff*/
-.container-argument-title {
-    margin-top:50px;
-    margin-bottom: 50px;
-    color: #757575;
-    font-family: var(--font-family-heading2);
-    font-size: 24px;
-    line-height: normal;
-}
-.container-argument-title h4 {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: normal;
-    font-style:italic;
-}
+
 
 /*argument1*/
 #argument1 {
@@ -292,10 +280,11 @@ header {
 .argument1-bigpicture {
     padding: 20px;
     border-radius: 25px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--secondary-color);
     max-width: 600px;
     margin-top: 50px;
     align-items: center;
+    color: var(--secondary-color);
 }
 
 .argument1-quote {
@@ -303,6 +292,7 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: 0;
+    color: var(--secondary-color);
 }
 
 .quote-mark {
@@ -310,7 +300,7 @@ header {
     text-align: center;
     font-family: var(--font-family-heading2);
     font-size: 96px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .quote-text {
@@ -350,13 +340,21 @@ header {
     text-align: center;
 }
 
+
+/*argument2*/
+#argument2 {
+    padding-top: 10px;
+    margin-left: 100px;
+    position: relative;
+}
+
+
 /*sources*/
 #sources {
     background-color: var(--primary-color);
     color: var(--background-color);
     padding: 100px;
     margin-right: -100px;
-    font-family:var(--font-family-heading2);
 }
 
 .container {
