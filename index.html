@@ -8,6 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Serif:ital,wght@1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="moving-textboxes.css">
     <script src="leader-line.js"></script>
     <!-- <script src="scroll.js"></script> -->
     <script src="https://unpkg.com/leader-line@1.0.7/leader-line.min.js"></script>
@@ -15,20 +16,24 @@
 </head>
 
 <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#argument1">Argument 1</a></li>
+            <li><a href="#argument2">Argument 2</a></li>
+            <li><a href="#argument3">Argument 3</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#sources">Sources</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADING -->
     <header>
         <div class="headline">
             <h1>Is the answer blowing in the wind?</h1>
-            <h2>Understanding pushback against climate change</h2>
-        </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#argument1">Argument 1</a></li>
-                <li><a href="#argument2">Argument 2</a></li>
-                <li><a href="#argument3">Argument 3</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
-                <li><a href="#sources">Sources</a></li>
-            </ul>
+            <h2>Understanding the Pushback Against Wind Energy in Germany</h2>
         </div>
     </header>
 
@@ -36,19 +41,22 @@
         <!-- ITRODUCTION -->
         <section id="introduction" class="introduction">
             <div class="background-image">
-            <img src="images/Wind_Background.png" alt="">
+            <img id="hero-img" src="images/Wind_Background.png" alt="wind turbines in landscape">
             </div>
             <div class="introduction-content">
-                <p>Wind energy is Germany's primary renewable energy source, essential for the nation's shift away from fossil fuels. With one of the world's largest capacities for onshore wind generation, Germany has made significant strides in efficiency and cost reduction.</p>
+                <p>Wind energy is Germany's primary renewable energy source, essential for the nation's shift away from fossil fuels. With one of the world's largest capacities for onshore wind generation, Germany has made significant strides in efficiency and cost reduction. Since 2019, onshore wind has become Germany’s single most important electricity source, with an annual output growth of 25% between 2019-2023.</p>
             </div>
-            <div class="introduction-text">
-                <p>Despite the growth of wind energy, there has also been increasing social pushback threatening the potential to have wind continue to grow into a crucial component of Germany's energy transition. As Germany grapples with these challenges, the question arises:</p>
-                <h3>What are the key arguments hindering the progress of wind energy?</h3>
+            <h2 style="color: #17184b;">Some Data</h2>
+            <div class="align-right">
+                <img class="graph" src="images/graph01_introduction.png" alt="graph 1">
+            </div>
+            <div class="align-left">
+                <img class="graph" src="images/graph02_introduciton.png" alt="graph 2">
             </div>
         </section>
 
         <!-- ARGUMENT 1 -->
-        <section id="argument1">
+        <section id="argument1" class="argument">
             <p style="color: grey;">Argument 1</p>
             <h4>Negative effects on wildlife and nature</h4>        
             <p>The biggest pushback against wind energy is due to environmental concerns. The German economy ministry (BMWi) has pointed to the Federal Ministry of the Environment (BMU) as being responsible for blocking the expansion of wind energy. Legal challenges and regulatory changes have further complicated the landscape, posing a formidable challenge to meeting emissions reduction goals. Here are some of the nature conservation-based arguments against the development of wind energy in Germany, and the voices of people and organizations behind such arguments.</p>
@@ -126,12 +134,19 @@
                 <h4>The big Pictures</h4>
                 <p>Considering the above arguments, perhaps we should also consider the following:</p>
             </div>
+<<<<<<< Updated upstream
         
         <div class="argument1-bigpicture">
             <p>Are people voicing nature and wildlife concerns against wind power really fighting on the side of nature conservation or just using it to promote their own (often economic) interests?</p>
         </div>
         <div class="argument1-bigpicture-quote">
             <img src="images/person_NABU.png" alt=""> 
+=======
+            <p>Considering the above arguments, perhaps we should also consider the following:</p>
+            <div class="argument1-bigpicture">
+                <p>Are people voicing nature and wildlife concerns against wind power really fighting on the side of nature conservation or just using it to promote their own (often economic) interests?</p>
+            </div> 
+>>>>>>> Stashed changes
             <div class="argument1-quote">
                 <div class="quote-mark">"</div>
                 <div class="quote-text">
@@ -141,6 +156,7 @@
                 </div>
                 <div class="quote-mark">"</div>
             </div>
+<<<<<<< Updated upstream
         </div>
 
         <div class="argument1-bigpicture">
@@ -153,10 +169,22 @@
                 <div class="quote-text">
                     <p>"I have nothing against the red kite (bird), but I have something against people who declare it the most sacred bird (...) that is no longer rational, it is an emotional relationship to nature conservation.
                         <br>- Johannes Lackmann, managing director Westfalenwind
+=======
+
+            <div class="argument1-bigpicture">
+                <p>Are people that using environmental reasons against wind power are really fighting for the side of nature or just weaponizing it to promote their own interests?</p>
+            </div> 
+            <div class="argument1-quote">
+                <div class="quote-mark">"</div>
+                <div class="quote-text">
+                    <p>The impact of a wind turbine on its environment is significantly greater than the sealed area alone. Many animals are killed by wind turbines, especially bats, birds and insects.
+                        <br>- NABU, Landesverband Berlin
+>>>>>>> Stashed changes
                     </p>
                 </div>
                 <div class="quote-mark">"</div>
             </div>
+<<<<<<< Updated upstream
         </div>
 
         <div class="argument1-bigpicture">
@@ -195,16 +223,31 @@
             <h3>Are the arguments and the buzz words that we often hear in the discussions coming from a real concern to the environment or just being used to achieve personal interest?</h3>
             <h3>Can we compare the environmental damage of the turbines to the environmental damage that caused by fossil fuel production?</h3>
         </div>
+=======
+
+            <div class="container-food">
+                <div class="food-header">
+                    <img id="lightbulb" src="images/lightbulb.png" alt="" >
+                    <h3>Food for thought</h3>
+                </div>
+                <div class="food-wrapper">
+                    <p>Can we compare the environmental damage of the turbines to the environmental damage that caused by fossil fuel production ?</p>
+                    <p>Are the arguments and the buzz words that we often hear in the discussions coming from a real concern to the environment or just being used to achieve personal interest?</p>
+                </div>
+            </div>
+>>>>>>> Stashed changes
         </section>
 
         <!-- ARGUMENT 2 -->
         <section id="argument2" class="argument">
             
             <!-- arg 2: header and intro -->
-            <p style="color: grey;">Argument 2</p>
-            <h4 class="argument-title">Community Concerns:
-                Health, Wellbeing & Aesthetics</h4>        
-            <p>The second most significant barrier to expanding wind energy in Germany is local opposition from residents living near wind farms. Individual initiatives have proven to be effective in voicing concerns, and here are some of their arguments:</p>
+            <div class="argument-header-wrapper">
+                <p style="color: grey;">Argument 2</p>
+                <h4 class="argument-title">Community Concerns:
+                    Health, Wellbeing & Aesthetics</h4>        
+                <p>The second most significant barrier to expanding wind energy in Germany is local opposition from residents living near wind farms. Individual initiatives have proven to be effective in voicing concerns, and here are some of their arguments:</p>
+            </div>
             
             <!-- pushbacks (blue section) -->
             <div class="container-pushback">
@@ -345,8 +388,6 @@
                     <img id="lightbulb" src="images/lightbulb.png" alt="" >
                     <h3>Food for thought</h3>
                 </div>
-                
-                </div>
                 <div class="food-wrapper">
                     <p>Can we compare the environmental damage of the turbines to the environmental damage that caused by fossil fuel production ?</p>
                     <p>Are the arguments and the buzz words that we often hear in the discussions coming from a real concern to the environment or just being used to achieve personal interest?</p>
@@ -358,10 +399,12 @@
         <section id="argument3" class="argument">
             
             <!-- arg 3: header and intro -->
-            <p style="color: grey;">Argument 3</p>
-            <h4 class="argument-title">It Doesn’t Make Sense Financially</h4>        
-            <p>Another big pushback against the growth of wind energy in Germany is the costs to make it happen, a big hurdle for the transition to renewable energy generation in general.  The implementation of wind energy requires funding for not only the wind power generators themselves (wind farms), but also requires large investments into an infrastructure to help store and distribute this energy. Here are some of the arguments that say it’s not worth the investment:</p>
-            
+            <div class="argument-header-wrapper">
+                <p style="color: grey;">Argument 3</p>
+                <h4 class="argument-title">It Doesn’t Make Sense Financially</h4>        
+                <p>Another big pushback against the growth of wind energy in Germany is the costs to make it happen, a big hurdle for the transition to renewable energy generation in general.  The implementation of wind energy requires funding for not only the wind power generators themselves (wind farms), but also requires large investments into an infrastructure to help store and distribute this energy. Here are some of the arguments that say it’s not worth the investment:</p>
+            </div>
+
             <!-- pushbacks (blue section) -->
             <div class="container-pushback">
 
@@ -425,6 +468,7 @@
                         <img src="images/2_health_concerns.png" alt="plastic emitting wind turbine">
                     </div>
                 </div>
+            </div>
 
             <!-- the big picture (orange section) -->
             <div class="container-picture">
@@ -456,7 +500,8 @@
                     </div>
                     <div class="content-item align-right">
                         <img src="images/3_money-blown.png" alt="money notes flying out of industrial chimneys">
-                        <div class="textbox picture-citation">The more renewable energy plants with their low prices are in the electricity system, the less often expensive gas-fired power plants determine the wholesale electricity price," -Fabian Huneke, an electricity market expert [source]</div>
+                        <img class="exclamation-marks" src="images/_exclamation-marks.svg" alt="icon exclamation marks">
+                        <div id="arg3-pictures-6" class="textbox picture-citation golden-ratio">The more renewable energy plants with their low prices are in the electricity system, the less often expensive gas-fired power plants determine the wholesale electricity price," -Fabian Huneke, an electricity market expert [source]</div>
                     </div>
                 </div>
             </div>
@@ -467,10 +512,8 @@
                     <img id="lightbulb" src="images/lightbulb.png" alt="" >
                     <h3>Food for thought</h3>
                 </div>
-                
-                </div>
                 <div class="food-wrapper">
-                    <p>Should we fight against renewable energy source because of potential health problems to people who live next tot them?</p>
+                    <p>Should we fight against renewable energy source because of potential health problems to people who live next to them?</p>
                     <p>How many of the push backs are actually coming from locals  and how many are spread by other anti wind energy organisations?</p>
                 </div>
             </div>
@@ -478,40 +521,38 @@
 
         <!-- CONCLUSION -->
         <section id="conclusion">
-            <div>
+            <div class="textbox conclusion-box">
                 <h2>Conclusion</h2>
                 <p>We hope that by presenting some of the arguments against wind energy, we could inspire further questioning and research into how we can make the transition to renewable energy one that will benefit both the environment and the humans and animals that depend on it.
                     To dive deeper, here is a list of sources that we used to present this information:</p>
             </div>
             <img id="img-conclusion-updown" src="images/Wind_Background.png" alt="wind turbines in landscape, image turnt upside down">
         </section>
+    </main>
 
-        <!-- SOURCES -->
-        <section id="sources">
-            <P>Climate Friction Map</P>
-            <p>Project Information</p>
-                        <p>Text</p>
-                        <p>FH Potsdam 2024</p>
-            <div class="container">
-                <p>Sources</p>
-                <div class="source-row">
-                    <div class="source-column">
+    <!-- SOURCES -->
+    <footer id="sources">
+        <P>Climate Friction Map</P>
+        <p>Project Information</p>
+                    <p>Text</p>
+                    <p>FH Potsdam 2024</p>
+        <div class="container">
+            <p>Sources</p>
+            <div class="source-row">
+                <div class="source-column">
+                <p>Source 1</p>
+                <p>Source 2</p>
+                <p>Source 3</p> 
+                </div>
+                <div class="source-column">
                     <p>Source 1</p>
                     <p>Source 2</p>
-                    <p>Source 3</p> 
-                    </div>
-                    <div class="source-column">
-                        <p>Source 1</p>
-                        <p>Source 2</p>
-                        <p>Source 3</p>
-                    </div>
+                    <p>Source 3</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </footer>
         
-    </main>
-    <footer></footer>
-
 
 </body>
 </html>
