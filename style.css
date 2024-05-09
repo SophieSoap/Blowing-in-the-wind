@@ -229,7 +229,6 @@ header {
     padding: 20px;
     border-radius: 25px;
     max-width: 800px;
-    margin-top: 50px;
 }
 
 .argument1-content4 {
@@ -237,7 +236,7 @@ header {
     padding: 20px;
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
-    margin-top: 50px;
+    margin: auto; /* Zentrieren der Box mit automatischen Seitenrändern */
 }
 
 .argument1-content5 {
@@ -245,7 +244,7 @@ header {
     padding: 20px;
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
-    margin-top: 50px;
+    margin: auto;
 }
 
 .container-argument1-content5 {
@@ -261,8 +260,8 @@ header {
     padding: 20px;
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
-    margin-top: 50px;
-    align-items: center;
+
+    margin: auto;
 }
 
 .argument1-content7 {
@@ -270,8 +269,8 @@ header {
     padding: 20px;
     border-radius: 25px;
     max-width: 600px; /* Maximale Breite der Box */
-    margin-top: 50px;
     align-items: center;
+    margin-right: 70px;
 }
 
 
