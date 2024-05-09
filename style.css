@@ -4,6 +4,7 @@
     --tertiary-color: #1E1E1E;
     --quaternary-color: #795AED;
     --textbox-color: #DEDCE9;
+    --textbox-color2: #FDDCC6;
     --background-color: #EFEEE9;
     --font-family-heading: "IBM Plex Mono", monospace;
     --font-family-heading2: "IBM Plex Serif", serif;
@@ -73,7 +74,7 @@ h3 {
 
 h4 {
     font-family: var(--font-family-heading2);
-    /* color: var(--secondary-color); */
+    color: var(--secondary-color);
     font-size: 48px;
     font-style: bold;
     font-weight: 400;
@@ -182,28 +183,7 @@ header {
     will-change: transform; /* Legt fest, dass das Element eine Transformation erfahren wird *
     transition: transform 3s ease; /* Animationsübergang *
 }
-
-.container-argument1-content3 {
-    display: flex;
-    align-items: center;
-}
-
-.image-argument1-content1 img {
-    bottom: -50px;
-}
-
-.overlay-image {
-    position: absolute;
-    top: 1000px;
-    right: 200px;
-    z-index: 1; /* Damit das Bild über dem Hintergrundbild liegt */
-    /* Weitere Anpassungen nach Bedarf *
-}
-
-.image-argument1-content3 {
-    position: relative;
-    left: 100px;
-}*/
+*/
 
 .container-argument1 {
     display: flex;
@@ -242,13 +222,7 @@ header {
     left: 50px;
 }
 
-
-
-
-
-
-
-.argument1-bigpicture {
+.argument1-bigpicture { 
     padding: 20px;
     border-radius: 25px;
     border: 2px solid var(--secondary-color);
@@ -256,14 +230,20 @@ header {
     margin-top: 50px;
     align-items: center;
     color: var(--secondary-color);
+    font-family: var(--font-family-heading);
+}
+
+.argument1-bigpicture-quote{
+    display: flex;
 }
 
 .argument1-quote {
     display: flex;
-    max-width: 600px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: 0;
     color: var(--secondary-color);
+    /*align-items: center;*/
 }
 
 .quote-mark {
@@ -277,6 +257,20 @@ header {
 .quote-text {
     flex: 3; /* mehr Platz für mittlere Spalte */
 }
+
+.argument1-quote2 {
+    
+    max-width: 800px;
+   
+    margin: auto;
+    background-color: var(--textbox-color2);
+    border-radius: 25px;
+    padding: 20px;
+    align-items: center;
+}
+
+
+
 
 
 .banner {
@@ -406,8 +400,13 @@ header {
 /* textboxes */
 
 .textbox {
-    padding: 40px;
-    border-radius: 40px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.textbox.picture-box h4 {
+    color: var(--background-color);
 }
 
 .picture-box {
