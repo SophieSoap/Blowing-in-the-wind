@@ -376,14 +376,20 @@ header {
 
 
 /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+#footer {
+    margin-left: 0px; /* Setzt die Margin-Bottom des vorherigen Elements auf 0 */
+}
 /* SOURCES */
-
 #sources {
     background-color: var(--primary-color);
     color: var(--background-color);
     padding: 100px;
-    /* margin-right: -100px; */
-    border-radius: 50px 50px 0 0 ;
+    /*border-radius: 50px 50px 0 0 ;*/
+    font-size: 16px;
+}
+#sources h3{
+    color: var(--background-color);
+    font-size: 24px; 
 }
 .container {
     max-width: 1200px;   
@@ -398,6 +404,9 @@ header {
 }
 .source-column p {
     margin-bottom: 10px;
+}
+.source-column a {
+    color: var(--background-color);
 }
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
