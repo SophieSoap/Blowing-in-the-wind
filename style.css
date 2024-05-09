@@ -73,7 +73,7 @@ h3 {
 
 h4 {
     font-family: var(--font-family-heading2);
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
     font-size: 48px;
     font-style: bold;
     font-weight: 400;
@@ -374,4 +374,97 @@ header {
 
 .source-column p {
     margin-bottom: 10px;
+}
+
+
+
+/* ###### leo ###### */ 
+
+/* containers */
+.container-pushback {
+    border: blue dotted 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+}
+
+.container-picture {
+    border: blue dotted 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+
+.container-content {
+    border: red solid 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content-header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px;
+    border-radius: 25px;
+
+    /* max-width: 800px; */
+
+    /* margin-top: 50px; */
+}
+
+.content-item {
+    border: green solid 5px;
+    
+}
+
+.align-left {
+    display: flex;
+    gap: 48px;
+    justify-content: flex-end;
+}    
+
+.align-right {
+    display: flex;
+    gap: 48px;
+    justify-content: flex-start;
+}    
+
+/* textboxes */
+
+.textbox {
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.picture-box {
+    background-color: var(--secondary-color);
+    color: #EFEEE9;
+}
+
+.example-textbox {
+    background-color: var(--textbox-color);
+    padding: 40px;
+    border-radius: 25px;
+
+    width: 60%;
+    max-width: 600px; /* Maximale Breite der Box */
+    height: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.additional-note {
+    border: #201658 dashed 1px;
+    background-color: none;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+#note-21 {
+    max-width: 500px;
 }
