@@ -23,19 +23,13 @@ body {
     background-color: var(--background-color);
     font-family: var(--font-family-body);
     font-size: 18px;
-
     /* center in html/viewport */
     margin: 0 auto;
-
-
     width: 100%;
     max-width: 1280px;
-
     /* padding everywhere but bottom */
     /* padding: 40px 40px 0 40px; */
-
     /* border: red solid 2px; */
-
 }
 
 /* DEFINE FONTS */
@@ -105,9 +99,6 @@ h4 {
 
 header {
     color: var(--primary-color);
-    margin-left: 100px;
-
-    /* background-color: rgba(250,0,0,.1); */
 }
 .headline {
     width: 100%;
@@ -156,18 +147,20 @@ header {
     padding-left: 25px; /* Platz für den Text beim Hover */
 }
 
-
-
 /* INTRO*/
 
 /* #introduction {
     position: relative;
     margin-left: 100px;
 } */
+#introduction {
+    padding-bottom: 50px;
+}
 
 #hero-img {
     width: 100%;
     min-width: 100%;
+    padding-top: 100px;
 }
 .introduction-content {
     padding: 20px;
@@ -178,15 +171,25 @@ header {
     z-index: 1;  /*Einleitung über Hintergrundbild liegt */
 
     /* position */
-    margin: -500px 80px 400px auto;
+    margin: -570px 80px 400px auto;
 }
 
-.graph {
-    min-width: 80%;
-    /* min-width: 660px; */
-    height: auto;
-
+/*.graph {
+    width: 80%;
+    /*min-width: 660px;*/
+    /*height: auto;
     margin-bottom: 80px;
+}*/
+
+.graph1 {
+    margin-left: 350px; 
+    width: 80%;
+    height: auto;
+}
+
+.graph2 img {
+    margin-left: 350px;
+    
 }
 
 /*argument1*/
@@ -235,8 +238,8 @@ header {
 
 .overlay-image {
     position: absolute;
-    top: 1700px;
-    left: -50px;
+    top: 4000px;
+    left: -25px;
     z-index: 1; /* Bild über Hintergrundbild */
 }
 
@@ -325,10 +328,7 @@ header {
 /* FOOD FOR THOUGHT */
 
 .food-for-thought p {
-    font-family: var(--font-family-heading);
     color: var(--primary-color);
-    font-size: 36px;
-    font-style: monospace;
     text-align: center;
 }
 .food-header {
@@ -357,7 +357,7 @@ header {
     /* border: blue dotted 5px; */
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
 
 }
 #lightbulb {
@@ -507,6 +507,8 @@ header {
     /* width: 60%;
     min-width: 60%;
     max-width: 560px; */
+    font-family: var(--font-family-heading);
+    color: var(--secondary-color);
 
 }
 
@@ -530,7 +532,7 @@ header {
 }
 
 .picture-question {
-    border: solid var(--secondary-color) 1px;
+    border: solid var(--secondary-color) 2px;
 
 }
 
@@ -540,10 +542,7 @@ header {
 }
 
 .picture-citation {
-    font-family: "IBM Plex Serif", serif;
-    font-weight: lighter;
     color: var(--secondary-color);
-    font-style: normal;
 }
 
 .example-textbox {
@@ -560,6 +559,9 @@ header {
     border: solid #201658 2px;
     margin-bottom: 50px;
 }
+.textbox.conclusion-box p {
+    color: var(--primary-color);
+}
 
 .bold {
     font-weight: bold;
@@ -570,7 +572,7 @@ header {
 }
 
 .additional-note {
-    border: #201658 dashed 1px;
+    border: #201658 dashed 2px;
     background-color: none;
     padding: 40px;
     border-radius: 40px;
